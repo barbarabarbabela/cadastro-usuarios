@@ -37,25 +37,25 @@ const Modal = (props) => {
     });
   };
 
-  const sendForm = () => {
+  const createUser = () => {
     const usersInLocalStorage = JSON.parse(localStorage.getItem("users")) || [];
 
-    const updatedUsers = props.isEdit
+    const newUser = props.isEdit
       ? usersInLocalStorage.map((user) => (user.id === state.id ? state : user))
       : [...usersInLocalStorage, state];
 
-    localStorage.setItem("users", JSON.stringify(updatedUsers));
+    localStorage.setItem("users", JSON.stringify(newUser));
   };
 
   const editUser = (userProps) => {
-    const usersInLocalStorage = JSON.parse(localStorage.getItem("users")) || [];
+    const usersLocalStorage = JSON.parse(localStorage.getItem("users")) || [];
 
-    const userIndex = usersInLocalStorage.findIndex(
+    const userIndex = usersLocalStorage.findIndex(
       (user) => user.id === userProps.id
     );
 
     if (userIndex !== -1) {
-      const updatedUsers = [...usersInLocalStorage];
+      const updatedUsers = [...usersLocalStorage];
       updatedUsers[userIndex] = { ...userProps, ...state };
 
       localStorage.setItem("users", JSON.stringify(updatedUsers));
@@ -96,7 +96,7 @@ const Modal = (props) => {
 
           <div className="Button">
             <Button
-              onClick={props.isEdit ? () => editUser(props.user) : sendForm}
+              onClick={props.isEdit ? () => editUser(props.user) : createUser}
               name={props.isEdit ? "Atualizar Usuário" : "Adicionar Usuário"}
             />
             <Button name="Cancelar" onClick={props.closeModal} />
