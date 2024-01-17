@@ -64,4 +64,4 @@ npm start
 - Optei por persistir os dados no local storage.
 - Optei por criar uma aplicação estritamente Web, devido ao contexto apresentado.
 - Não ficou claro, para mim, quais informações - além da categoria - deveriam constar nos dados do usuário. Dessa forma, decidi trabalhar com os dados: nome, categoria e e-mail.
-- Como o projeto não possui um design pré-definido, optei por criar um design próprio. Peço desculpas por isso.
+- Como o projeto não possui um design pré-definido, optei por criar um design próprio.
