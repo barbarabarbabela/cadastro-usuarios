@@ -1,0 +1,37 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #09a3ce;
+  display: flex;
+}
+.modalContainer {
+  box-shadow: 2px 2px 2px #114881;
+  border-radius: 5%;
+  background-color: #fff;
+  margin: auto;
+}
+
+.modalContainer h1 {
+  color: #114881;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.input {
+  padding: 5px;
+}
+
+.Button {
+  padding: 5px;
+}

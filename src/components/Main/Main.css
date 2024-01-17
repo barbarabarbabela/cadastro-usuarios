@@ -1,0 +1,9 @@
+.Main {
+  align-items: center;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 5px;
+}

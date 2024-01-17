@@ -1,0 +1,39 @@
+.Users {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #114881;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40px;
+  margin: 10px;
+  align-items: center;
+  min-width: 893px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.Users:hover {
+  background-color: #eae8e8;
+}
+
+.category {
+  font-size: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+.name {
+  width: 300px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.email {
+  width: 300px;
+  font-size: 14px;
+}
+
+.actions {
+  width: 150px;
+  display: flex;
+}

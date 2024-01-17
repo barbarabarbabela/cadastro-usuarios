@@ -1,0 +1,16 @@
+.Header {
+  color: white;
+  padding: 10px 50px;
+}
+
+.Header h1 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 3em;
+  color: #fff;
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+}
